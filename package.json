@@ -7,6 +7,13 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "dev": "node src/server.js"
+    "dev": "node src/server.js",
+    "format:check": "npx prettier . --check",
+    "format:fix": "npx prettier . --write"
+  },
+  "devDependencies": {
+    "@types/node": "^22.14.1",
+    "prettier": "3.5.3",
+    "typescript": "^5.8.3"
   }
 }
